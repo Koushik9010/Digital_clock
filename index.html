@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Degital Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">Degital Clock</h2>
+
+      <div class="content">
+        <div id="time"></div>
+      </div>
+    </div>
+
+    <script>
+      window.onload = time();
+
+      function time() {
+        //get the element
+        let displayTime = document.getElementById("time"); //geting the time element from the html
+
+        //get the time
+        let time = new Date(); //get the time based on the current date
+
+        //format the time
+        let getTime = time.toLocaleString("en-us", {
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: "true",
+        }); //time format
+
+        //pass the value
+        displayTime.innerText = getTime; //displaying the time inside the html
+      }
+
+      setInterval(time, 1000); //to change the time
+    </script>
+  </body>
+</html>
