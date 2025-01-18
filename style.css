@@ -14,8 +14,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(135deg, #282c34, #4a69bd);
   font-family: "mulish", sans-serif;
   overflow-x: hidden;
+  color: #fff;
   user-select: none; /*When applied, it disables the ability to highlight or copy the conten */
 }
 
@@ -25,36 +27,41 @@ body {
   box-sizing: border-box;
 }
 
-.container{
-    min-width: 400px;
-    border-radius: 5px;
-    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
-    padding: 0 10px;
-    margin: 20px 10px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+.container {
+  width: 400px;
+  border-radius: 12px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  text-align: center;
 }
 
-.container .title{
-    width: 100%;
-    padding: 20px 0;
-    margin-bottom: 20px;
-    border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
-    text-align: center;
-    font-size: 25px;
-    font-weight: 700;
-    letter-spacing: 3px;
+.container .title {
+  width: 100%;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-bottom: 3px dashed rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #fff;
 }
 
-.container .content{
-    width: 100%;
-    display: block;
-    padding-bottom: 20px;
-    text-align: center;
+.container .content {
+  width: 100%;
+  display: block;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
-.container .content #time{
-    font-size: 'Bebas Neue';
-    font-size: 60px;
-    font-weight: 700;
+.container .content #time {
+  font-size: "Bebas Neue";
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #e4e5e6;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 0 15px rgba(255, 255, 255, 0.2);
 }
